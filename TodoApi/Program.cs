@@ -31,7 +31,6 @@ app.MapPost("/api/todos", (TodoPostDto dto) =>
 
     var todo = new TodoGetDto(nextId, dto.Title, false);
     todos.Add(todo);
-
     return Results.Created($"/api/todos/{todo.Id}", todo);
 });
 
