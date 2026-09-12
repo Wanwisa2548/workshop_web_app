@@ -32,5 +32,4 @@ app.MapGet("/api/todos/{id}", (int id) =>
         ? Results.NotFound()
         : Results.Ok(todo);
 });
-
 app.Run();
